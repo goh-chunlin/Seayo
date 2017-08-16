@@ -1,0 +1,12 @@
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/app.db
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/Seayo.deps.json
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/Seayo.runtimeconfig.json
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/Seayo.runtimeconfig.dev.json
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/Seayo.dll
+/Users/chunlin/ASP.NetProjects/Seayo/bin/Debug/netcoreapp2.0/Seayo.pdb
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/Seayo.csproj.CoreCompileInputs.cache
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/Seayo.AssemblyInfoInputs.cache
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/Seayo.AssemblyInfo.cs
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/Seayo.dll
+/Users/chunlin/ASP.NetProjects/Seayo/obj/Debug/netcoreapp2.0/Seayo.pdb
