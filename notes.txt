@@ -1,3 +1,9 @@
-OAuth client
+Google OAuth client
 Client ID: 329282232547-rl7a0h1ge2jcnh8h3c3o5rg5qrn203ut.apps.googleusercontent.com
 Client Secret: TnM2rSt3du1a8vlpt7zB2eys
+
+
+
+Facebook
+App ID: 465117763868532
+App Secret: a6aa720a729822444d167fc342f0f6b0
