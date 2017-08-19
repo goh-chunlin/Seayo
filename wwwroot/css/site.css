@@ -1,9 +1,4 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Wrapping element */
+﻿/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -32,4 +27,21 @@
     .carousel-caption {
         display: none;
     }
+}
+
+.demo-layout-transparent {
+  background: url('/images/hero-banner.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.section-header {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px gray;
+    margin-top: 50px;
 }

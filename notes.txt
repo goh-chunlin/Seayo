@@ -1,0 +1,3 @@
+OAuth client
+Client ID: 329282232547-rl7a0h1ge2jcnh8h3c3o5rg5qrn203ut.apps.googleusercontent.com
+Client Secret: TnM2rSt3du1a8vlpt7zB2eys
