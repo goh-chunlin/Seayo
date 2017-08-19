@@ -9,6 +9,10 @@
     ViewData["Title"] = "Log in";
 }
 
+<h2>@ViewData["Title"]</h2>
+<h4>Login using one of the social network channel below.</h4>
+<hr />
+
 <form asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
     
 
