@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "cd945696cff90a9745d51031f9ca805e22e8725c"
+    "signature": "18a4839731cb85bb33337c0957ac1c9bef45f43b"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,10 @@
       "Seayo/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.0",
+          "Microsoft.Extensions.SecretManager.Tools": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0"
         },
@@ -2176,6 +2178,18 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Extensions.SecretManager.Tools/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.UserSecrets": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-user-secrets.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-user-secrets.dll": {}
         }
       },
       "Microsoft.Extensions.WebEncoders/2.0.0": {
@@ -5296,6 +5310,13 @@
       "sha512": "sha512-ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
       "path": "microsoft.extensions.primitives/2.0.0",
       "hashPath": "microsoft.extensions.primitives.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.SecretManager.Tools/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YojQ+ZAn+pHY7QVNgT4FDxCy9OW5JJ4FN2LdofTEmsp9/WKFW9vb//b+3UFMzTourwZoxfB1cdwCC1z2/+LJ/A==",
+      "path": "microsoft.extensions.secretmanager.tools/2.0.0",
+      "hashPath": "microsoft.extensions.secretmanager.tools.2.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.WebEncoders/2.0.0": {
       "type": "package",

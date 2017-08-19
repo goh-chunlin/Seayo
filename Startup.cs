@@ -36,6 +36,13 @@ namespace Seayo
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            // Add social network logins
+            services.AddAuthentication().AddGoogle(googleOptions =>
+            {
+                googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+            });
+
             services.AddMvc();
         }
 
