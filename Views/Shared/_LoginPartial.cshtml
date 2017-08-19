@@ -9,7 +9,7 @@
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            <a class="mdl-navigation__link" onclick="$('#logoutForm').submit();">Log out</button>
+            <a class="mdl-navigation__link" onclick="$('#logoutForm').submit();">Log out</a>
         </nav>
     </form>
 }
