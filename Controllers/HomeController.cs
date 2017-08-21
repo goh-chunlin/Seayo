@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Seayo.Models;
+using Seayo.Models.FileViewModels;
 
 namespace Seayo.Controllers
 {
@@ -13,6 +14,14 @@ namespace Seayo.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult UploadFile(FileUploadViewModel upload)
+        {
+            ViewBag.ActionMessage = $"The image {upload.File.FileName} has been uploaded.";
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult About()

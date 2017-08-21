@@ -1,9 +1,32 @@
 ﻿@{ ViewData["Title"] = "Home Page"; }
 
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
 <div class="section-header">
     <h1>Seayo</h1>
 
     <div style="margin-top: 10px; font-size: 36px;">
         Upload and Compress Your Pictures
     </div>
+
+    @if (ViewBag.ActionMessage != null) {
+        <span class="mdl-chip mdl-chip--contact">
+            <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"><i class="fa fa-check"></i></span>
+            <span class="mdl-chip__text">@ViewBag.ActionMessage</span>
+        </span>
+    }
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <span>File</span>
+            @Html.TextBoxFor(m => m.File, new { type = "file" })
+
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Save
+            </button>
+        }
+    }
 </div>
