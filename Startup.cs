@@ -35,6 +35,7 @@ namespace Seayo
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IFileProcessor, FileProcessor>();
 
             // Add social network logins
             services.AddAuthentication()

@@ -58,6 +58,20 @@
     background: url('/images/twitter-login.jpg') center / cover;
 }
 
+.feature-card.mdl-card {
+  width: 640px;
+  height: 320px;
+  margin: 0 auto;
+}
+.feature-card > .mdl-card__title {
+  color: #fff;
+  text-shadow: 1px 1px gray;
+  background: #46B6AC;
+}
+.feature-card-image-upload > .mdl-card__title {
+    background: url('/images/image-upload.jpg') center / cover;
+}
+
 .section-header {
     text-align: center;
     color: white;

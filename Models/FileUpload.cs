@@ -4,14 +4,14 @@ namespace Seayo.Models
 {
 	public enum FileType
 	{
-		JPG, PNG
+		JPG, PNG, UNKNOWN
 	}
 
     public class FileUpload : BaseEntity
     {
         public int ID { get; set; }
 
-        public byte[] File { get; set; } 
+        public string Url { get; set; } 
 
 		public FileType? Type { get; set; }
     }

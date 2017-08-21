@@ -10,7 +10,18 @@ namespace Seayo.Models.FileViewModels
     public class FileUploadViewModel
     {
         [Required]
-        [FileExtensions(Extensions = "jpg,jpeg,png")]
         public IFormFile File { get; set; }
+
+        [FileExtensions(Extensions = "jpg,jpeg,png")]
+		public string FileName
+		{
+			get
+			{
+				if (File != null)
+					return File.FileName;
+				
+				return "";
+			}
+		}
     }
 }
