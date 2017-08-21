@@ -56,6 +56,8 @@ namespace Seayo.Controllers
                     await GetCurrentUserAsync());
 
                 await _db.FileUploads.AddAsync(newFileUpload);
+
+                await _db.SaveChangesAsync();
                 
                 TempData["ActionMessage"] = $"The image { model.File.FileName } has been uploaded.";
 
