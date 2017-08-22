@@ -48,8 +48,7 @@ namespace Seayo.Services
 			var storageAccount = CloudStorageAccount.Parse(storageConnectionString);
 
 			var blobClient = storageAccount.CreateCloudBlobClient();
-            
-			blobClient.DefaultRequestOptions.RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(3), 3);
+            blobClient.DefaultRequestOptions.RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(3), 3);
 
 			var blobContainer = blobClient.GetContainerReference(containerName);
 
