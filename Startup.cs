@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Rewrite;
 using Seayo.Data;
 using Seayo.Models;
 using Seayo.Services;
@@ -69,6 +70,8 @@ namespace Seayo
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                app.UseRewriter(new RewriteOptions()
+                    .AddRedirectToHttpsPermanent());
             }
 
             app.UseStaticFiles();
