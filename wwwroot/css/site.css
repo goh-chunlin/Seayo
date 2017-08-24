@@ -30,7 +30,7 @@
 }
 
 .demo-layout-transparent {
-  background: url('/images/hero-banner.jpg') center / cover;
+  background: url('/images/hero-banner.png') center / cover;
 }
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
