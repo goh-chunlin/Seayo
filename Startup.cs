@@ -66,6 +66,8 @@ namespace Seayo
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                app.UseRewriter(new RewriteOptions()
+                    .AddRedirectToHttpsPermanent());
             }
             else
             {
